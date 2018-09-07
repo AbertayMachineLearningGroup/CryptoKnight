@@ -1,0 +1,5 @@
+aes,symmetric,'Advanced Encryption Standard (AES)'
+rc4,symmetric,'Rivest Cipher 4 (RC4)'
+blowfish,symmetric,'Blowfish'
+rsa,asymmetric,'Rivest-Shamir-Adleman (RSA)'
+md5,hash,'Message Digest 5 (MD5)'

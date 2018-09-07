@@ -1,0 +1,4 @@
+{
+	"import": "#include <openssl/pem.h>\n#include <openssl/ssl.h>\n#include <openssl/rsa.h>\n#include <openssl/evp.h>\n#include <openssl/bio.h>\n#include <openssl/err.h>\n#include <stdio.h>\n",
+	"encrypt": "RSA *rsa = NULL;\n\tBIO *keybio;\n\tkeybio = BIO_new_mem_buf(publicKey, -1);\n\trsa = PEM_read_bio_RSA_PUBKEY(keybio, &rsa, NULL, NULL);\n\tRSA_public_encrypt(strlen(plaintext), plaintext, rivest, rsa, padding);\n\tBIO_dump_fp (stdout, (const char *)rivest, strlen(plaintext));\n\t"
+}

@@ -1,0 +1,17 @@
+# GCC Compilation Flags
+
+# Optimization Controls
+
+-O
+-O1
+-O2
+-O3
+-O0
+-Os
+-Ofast
+-Og
+
+# Additional
+
+-g
+-ggdb

@@ -1,0 +1,22 @@
+#################################################
+#						#
+#	CryptoKnight DBI Analysis Tools		#
+#						#
+#################################################
+
+TOOL_ROOTS := CryptoTrace
+CXX += -std=c++14
+TOOL_CXXFLAGS_NOOPT=1
+DEBUG = 1
+
+# Build the intermediate object file.
+$(OBJDIR)Trace$(OBJ_SUFFIX): Trace.cpp
+	$(CXX) $(TOOL_CXXFLAGS) $(COMP_OBJ)$@ $<
+
+# Build the intermediate object file.
+$(OBJDIR)Track$(OBJ_SUFFIX): Track.cpp Track.hpp
+	$(CXX) $(TOOL_CXXFLAGS) $(COMP_OBJ)$@ $<
+
+# Build the tool as a dll (shared object).
+$(OBJDIR)CryptoTrace$(PINTOOL_SUFFIX): $(OBJDIR)Trace$(OBJ_SUFFIX) $(OBJDIR)Track$(OBJ_SUFFIX) Track.hpp
+	$(LINKER) $(TOOL_LDFLAGS_NOOPT) $(LINK_EXE)$@ $(^:%.hpp=) $(TOOL_LPATHS) $(TOOL_LIBS)

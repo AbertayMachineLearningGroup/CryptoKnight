@@ -1,0 +1,4 @@
+{
+	"import": "#include <openssl/evp.h>\n#include <string.h>\n",
+	"encrypt": "EVP_CIPHER_CTX *ctx_rc4;\n\tctx_rc4 = EVP_CIPHER_CTX_new();\n\tEVP_EncryptInit_ex(ctx_rc4, EVP_rc4(), NULL, __key_def__, __iv_def__);\n\tEVP_EncryptUpdate(ctx_rc4, ciphertext, &len, plaintext, strlen((char *)plaintext));\n\tciphertext_len = len;\n\tEVP_EncryptFinal_ex(ctx_rc4, ciphertext + len, &len);\n\tciphertext_len += len;\n\tEVP_CIPHER_CTX_free(ctx_rc4);\n\tBIO_dump_fp (stdout, (const char *)ciphertext, ciphertext_len);\n\t"
+}

@@ -1,0 +1,15 @@
+# copy of intel's pin framework
+pin_tool/
+pin.log
+
+# training / testing binaries
+data/training/*
+data/testing/*
+
+# prediction
+data/sample
+report.txt
+
+# temporary buffers
+tmp/*
+

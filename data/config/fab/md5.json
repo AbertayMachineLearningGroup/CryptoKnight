@@ -1,0 +1,4 @@
+{
+	"import": "#include <openssl/md5.h>\n#include <openssl/conf.h>\n#include <string.h>\n",
+	"encrypt": "MD5_CTX md5_ctx;\n\tMD5_Init(&md5_ctx);\n\tMD5_Update(&md5_ctx, plaintext, strlen(plaintext));\n\tMD5_Final(digest, &md5_ctx);\n\tBIO_dump_fp (stdout, (const char *)digest, 16);\n\t"
+}

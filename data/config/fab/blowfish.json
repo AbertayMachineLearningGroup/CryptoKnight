@@ -1,0 +1,4 @@
+{
+	"import": "#include <openssl/err.h>\n#include <openssl/blowfish.h>\n#include <string.h>\n",
+	"encrypt": "BF_KEY bkey;\n\tBF_set_key(&bkey, strlen(__key_def__), __key_def__);\n\tBF_cbc_encrypt (plaintext, ciphertext, strlen((char *) plaintext), &bkey, __iv_def__, BF_ENCRYPT);\n\tBIO_dump_fp (stdout, (const char *)ciphertext, strlen ((char *) plaintext));\n\t"
+}

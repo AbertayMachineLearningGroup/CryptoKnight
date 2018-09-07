@@ -1,0 +1,11 @@
+char publicKey[]="-----BEGIN PUBLIC KEY-----\n"\
+	"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzzWujz4e61wutodD+nHY\n"\
+	"x80FjXm11gVp/W5D2iwCRPJN+4U5VU4kSH+JoCIrJ5645N0Gt5uAbrT64x6HMMOG\n"\
+	"Qdlc0L059gzlILpC4GnddVhQ4AObXm1c+HAIGYuAuR6/oezz1xgwq1bu5icgu+wz\n"\
+	"A3C1BRizPo3n0HSUVt31yqF/ixez+W0wVKzOKkWj2vACNlEaHOx2Y6cH9ekpTQ7g\n"\
+	"jeX81bF/MdEBrngH23Fw5xqk1WTdbM0VbGPwAot7WRpbEFxfiO8knBdEvmkV/fqO\n"\
+	"vYvufmH+Tg30zRJpBER+Mmm0OWqGHNLpBFVSyvsj2rmQt9IawJD/tkiGieyXJ54X\n"\
+	"qwIDAQAB\n"\
+	"-----END PUBLIC KEY-----";
+	int padding = RSA_PKCS1_PADDING;
+	

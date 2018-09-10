@@ -20,3 +20,23 @@ python knight.py --evaluate <dataset>
 ```
 
 To add custom cryptographic samples to the generation pool, please follow the [Format Specification](https://github.com/gregdhill/honours/blob/master/data/config/README.md).
+
+We also published "CryptoKnight: Generating and Modelling Compiled Cryptographic Primitives
+" that can be found [here](http://www.mdpi.com/2078-2489/9/9/231) in Open Access.
+
+If you want to cite the paper please use the following format;
+
+````
+@Article{info9090231,
+AUTHOR = {Hill, Gregory and Bellekens, Xavier},
+TITLE = {CryptoKnight: Generating and Modelling Compiled Cryptographic Primitives},
+JOURNAL = {Information},
+VOLUME = {9},
+YEAR = {2018},
+NUMBER = {9},
+ARTICLE NUMBER = {231},
+URL = {http://www.mdpi.com/2078-2489/9/9/231},
+ISSN = {2078-2489},
+DOI = {10.3390/info9090231}
+}
+````

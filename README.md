@@ -3,7 +3,7 @@
 Automated cryptographic classification framework using Intel's [Pin](https://software.intel.com/en-us/articles/pintool-downloads) platform for dynamic binary instrumentation and [PyTorch](http://pytorch.org/) for deep learning.
 
 * Clone Repository
-* Required Python libraries: ```sudo apt-get install python-pip, python-tk```
+* Required Python libraries: ```sudo apt-get install python-pip python-tk```
 * Install requirements: ```pip install -r requirements.txt```
 * Install toolkit: ```python knight.py --setup```
 * Binary compilation requires [OpenSSL](https://www.openssl.org/): ```sudo apt install libssl-dev```

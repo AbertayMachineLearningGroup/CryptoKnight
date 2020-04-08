@@ -19,7 +19,7 @@ python knight.py --predict <executable>
 python knight.py --evaluate <dataset>
 ```
 
-To add custom cryptographic samples to the generation pool, please follow the [Format Specification](https://github.com/gregdhill/honours/blob/master/data/config/README.md).
+To add custom cryptographic samples to the generation pool, please follow the [Format Specification](data/config/README.md).
 
 We also published "CryptoKnight: Generating and Modelling Compiled Cryptographic Primitives
 " that can be found [here](http://www.mdpi.com/2078-2489/9/9/231) in Open Access.
